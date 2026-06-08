@@ -21,15 +21,18 @@ elif question1 == "dramatic":
 else:
     print("That is not an option, question skipped.")
 
-if tech_class >= art_class and tech_class >= math_class and tech_class >= theatre_class:
+if tech_class > art_class and tech_class > math_class and tech_class > theatre_class:
     print("Your favorite class is Tech Class!")
 
-elif art_class >= tech_class and art_class >= math_class and art_class >= theatre_class:
+elif art_class > tech_class and art_class > math_class and art_class > theatre_class:
     print("Your favorite class is Art Class!")
 
-elif math_class >= tech_class and math_class >= art_class and math_class >= theatre_class:
+elif math_class > tech_class and math_class > math_class and math_class > theatre_class:
     print("Your favorite class is Math Class!")
 
-else:
+elif theatre_class > tech_class and theatre_class > art_class and theatre_class > math_class:
     print("Your favorite class is Theatre Class!")
+
+else:
+    print("There was a tie!")
     
